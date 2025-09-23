@@ -21,29 +21,87 @@
             <div class="sissejuhatus2">
             <section id="sissejuhatus">
                 <h2>Sissejuhatus</H2>
-                    <p>dsasadsadsaas dsafsa fafsaf fsaf sa</p>
+                    <p>HTML on veebilehtede alustala, olles vastutav lehe struktuuri ja sisu eest. CSS aga annab lehele stiili ja kujunduse, muutes selle visuaalselt atraktiivseks.
+                        Koos moodustavad need kaks keelt tänapäeva veebi nurgakivid. Siin on lihtne juhend HTML-i ja CSS-i kohta, mis on hea spikker ka tulevikus.
+                    </p>
             </section>
             </div>
             <div class="teooria2">
             <section id="teooria">
                 <h2>Teooria</h2>
-                <p>sadasdasdas</p>
+                <h3>HTML – veebilehe struktuur</h3>
+                <p>
+                    HTML ehk HyperText Markup Language on märgistuskeel, mida kasutatakse veebilehtede loomiseks. See koosneb elementidest, mis kirjeldavad lehe sisu. Iga element algab avatagiga (&lt;tag&gt;) 
+                    ja lõpeb lõputagiga (&lt;tag&gt;). Mõned elemendid on isesulguvad, näiteks &lt;img&gt; ja &lt;input&gt;.
+                </p>
+                <h4>Põhilised HTML-elemendid:</h4>
+                <ul>
+                    <li>&lt;!DOCTYPE html&gt;: Määrab dokumendi tüübiks HTML5. See on alati esimene rida.</li>
+                    <li>&lt;html&gt;: Kogu lehe juurelement.</li>
+                    <li>&lt;head&gt;: Sisaldab metaandmeid, nagu lehe pealkiri (&lt;title&gt;) ja lingid stiilifailidele.</li>
+                    <li>&lt;body&gt;: Sisaldab kogu nähtavat sisu.</li>
+                    <li>&lt;h1&gt; kuni &lt;h6&gt;: Pealkirjad, &lt;h1&gt; on kõige olulisem.</li>
+                    <li>&lt;p&gt;: Lõik ehk paragrahv.</li>
+                    <li>&lt;a&gt;: Hüperlink. Oluline omadus on href, mis määrab lingi sihtkoha.</li>
+                    <li>&lt;img&gt;: Pilt. Olulised omadused on src (pildi asukoht) ja alt (alternatiivne tekst).</li>
+                    <li>&lt;ul&gt; ja &lt;ol&gt;: Loendid. &lt;ul&gt; (unordered) on nummerdamata loend ja &lt;ol&gt; (ordered) on nummerdatud loend.</li>
+                    <li>&lt;li&gt;: Loendi element.</li>
+                    <li>&lt;div&gt;: Üldine plokielement sisu grupeerimiseks.</li>
+                </ul>
                 <a href="https://unsplash.com" target="`blank" rel="noopener noreferrer">
                     <img src="https://images.unsplash.com/photo-1757377125320-cf0d54c0c6e8?q=80&w=3471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Unsplash näidis" width="200" height="200" loading="lazy">
                 </a>
-                <p>dsadsad</p>
+                <h3>CSS – veebilehe stiilid</h3>
+                <p>
+                    CSS ehk Cascading Style Sheets on stiilikeel, mida kasutatakse veebilehe kujunduse ja paigutuse määramiseks. Stiilireeglid koosnevad selektorist ja deklaratsiooniplokist.
+                     Selektor valib HTML-elemendi, mida stiilida, ja deklaratsioonid (omadus-väärtus paarid) määravad selle stiili.
+                </p>
+                <h4>Peamised CSS-i omadused:</h4>
+                <ul>
+                    <li>color: Teksti värv.</li>
+                    <li>background-color: Taustavärv.</li>
+                    <li>font-size: Kirja suurus.</li>
+                    <li>font-family: Fondi tüüp.</li>
+                    <li>margin: Välisäär.</li>
+                    <li>padding: Siseäär.</li>
+                    <li>border: Ääris.</li>
+                    <li>display: Määrab elemendi paigutuse, näiteks block, inline, flex või grid.</li>
+                </ul>
                 <a href="index.html">
                     <img src="img/pilt2.jpg" alt="Mine visiitkaartini" width="200" height="200">
                 </a>
-                <p>dasdsadsadsa</p>
+                <h3>Klassid ja ID-d</h3>
+                <p>Lisaks elemenditüüpidele saad HTML-elementidele anda ka klasse (class) ja ID-sid (id), et neid CSS-is täpsemalt valida.</p>
+                <ul>
+                    <li>Klassid (.nimi) saab anda mitmele elemendile ja need on mõeldud korduvate stiilide rakendamiseks.</li>
+                    <li>ID-d (#nimi) peavad olema unikaalsed ühel lehel ja neid kasutatakse konkreetse elemendi valimiseks.</li>
+                </ul>
                 <video width="1000" height="300" controls>
                     <source src="img/video.mp4" type="video/mp4">
                 </video>
-                <p>dsadsadasds</p>
+                <h3>CSS-i lisamine HTML-lehele</h3>
+                <p>CSS-i saab lisada HTML-lehele kolmel viisil:</p>
+                <ol>
+                    <li>Väline stiilifail (&lt;link&gt;): See on kõige parem ja levinum meetod. Lood eraldi .css faili ja lingid sellele &lt;head&gt; sektsioonis.</li>
+                    <li>Sisemine stiil (&lt;style&gt;): Paigutad CSS-i otse &lt;style&gt; tagi sisse &lt;head&gt; sektsioonis. Hea väiksemate projektide puhul.</li>
+                    <li>Inline-stiil (style omadus): Lisad stiili otse HTML-elemendi style omadusele. Seda tuleks kasutada harva, kuna see teeb koodi raskesti hallatavaks.</li>
+                </ol>
                 <audio controls>
                     <source src="img/heli.wav" type="audio/wav">
                 </audio>
-                <p>dsadsadsa</p>
+                <h3>Spikker - olulised teadmised</h3>
+                <h4>HTML</h4>
+                <ul>
+                    <li>Struktuur: &lt;!DOCTYPE html&gt;, &lt;html&gt;, &lt;head&gt;, &lt;body&gt;.</li>
+                    <li>Sisu: &lt;h1&gt;-&lt;h6&gt;, &lt;p&gt;, &lt;a&gt;, &lt;img&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;div&gt;, &lt;span&gt;.</li>
+                    <li>Semantika: Kasuta semantilisi tage (&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;footer&gt;), et anda sisule tähendus. See on oluline SEO ja ligipääsetavuse jaoks.</li>
+                </ul>
+                <h4>CSS</h4>
+                <ul>
+                    <li>Süntaks: selektor { omadus: väärtus; }.</li>
+                    <li>Box Model: Igal elemendil on sisu (content), siseäär (padding), ääris (border) ja välisäär (margin).</li>
+                    <li>Paigutus: display: flex; ja display: grid; on kaasaegsed ja võimsad viisid lehe paigutuse loomiseks.</li>
+                </ul>
             </section>
             </div>
             </div>
