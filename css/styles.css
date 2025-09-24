@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+/* Navigatsioon */
 h1 {
     text-align: center;
     background-color: beige;
@@ -39,6 +40,7 @@ a:hover {
     color: gray;
 
 }
+/* Sisu */
 .sissejuhatus2{
     text-align: left;
     padding: 20px;
@@ -71,6 +73,7 @@ button:hover, button:focus {
     border-radius: 20px;
     margin-bottom: 30px;
 }
+/* Visiitkaart */
 .visiitkaart2 {
     margin: auto;
     width: 300px;
